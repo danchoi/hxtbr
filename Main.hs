@@ -19,6 +19,8 @@ stripInterstitialBR =
         none
         `when`
         ( 
+            withoutNav (hasName "br")
+            >>>
             followingSiblingAxis >>> filterAxis (isElem >>> hasName "p")
         )
     
