@@ -4,11 +4,8 @@ import Text.XML.HXT.Core
 import System.Environment
 import Data.List
 import Control.Arrow.ArrowNavigatableTree
-import Data.Tree.NTree.TypeDefs
 import Data.Tree.NavigatableTree.Class
-import Text.XML.HXT.DOM.TypeDefs
-import Numeric
-import Data.String.Utils (replace)
+
 
 -- removes BR tags that have any P tag following-siblings
 stripInterstitialBR = 
