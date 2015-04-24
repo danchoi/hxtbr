@@ -27,7 +27,7 @@ main = do
   input <- case args of
             [infile] -> readFile infile
             _ -> getContents
-  res <- runX (readString [ withValidate no,withWarnings no,withParseHTML yes ] input
+  res <- runX (readString [ withWarnings no,withParseHTML yes ] input
         >>>
         ( 
               
