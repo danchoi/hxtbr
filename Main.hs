@@ -43,10 +43,8 @@ main = do
         
         )
         >>>
-        writeDocument [
-                      withIndent yes
-                      ,withOutputHTML
-                      ,withXmlPi no
+        writeDocument [ withOutputHTML
+                      , withXmlPi no
                       ] "-"
         )
   return ()
